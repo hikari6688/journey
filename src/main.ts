@@ -1,0 +1,13 @@
+import { createApp } from "vue";
+import "@/styles/index.scss";
+import "./index.css";
+import "virtual:svg-icons-register";
+import App from "./App.vue";
+import router from "@/router";
+import i18n from "@/i18n";
+import store from "@/store/index";
+const app = createApp(App);
+app.use(store);
+app.use(router);
+app.use(i18n);
+app.mount("#app");
